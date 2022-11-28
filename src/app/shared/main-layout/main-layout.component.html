@@ -1,2 +1,10 @@
-<p>main-layout works!</p>
+<nav class="navbar bg-dark">
+  <h2>Anime shop</h2>
+  <ul>
+    <li routerLinkActive="active"><a href="#">Genshin Impact</a></li>
+    <li routerLinkActive="active"><a href="#">Manga</a></li>
+    <li routerLinkActive="active"><a href="#">Attributes</a></li>
+    <li routerLinkActive="active"><a [routerLink]="['/cart']">Cart</a></li>
+  </ul>
+</nav>
 <router-outlet></router-outlet>
