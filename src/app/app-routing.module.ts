@@ -29,6 +29,11 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'adminka',
+    loadChildren: () =>
+      import('./adminka/adminka.module').then((m) => m.AdminkaModule),
+  },
 ];
 
 @NgModule({
